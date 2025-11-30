@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gewinne einen 1000€ oder 350€ Tattoo-Gutschein bei Dana Ink! Weihnachts-Gewinnspiel bis 24.12.2025">
+  
+  <!-- Open Graph Tags for Social Sharing -->
+  <meta property="og:title" content="🎄 Dana Ink Weihnachts-Gewinnspiel: 1.350€ zu gewinnen!" />
+  <meta property="og:description" content="Gewinne einen 1000€ oder 350€ Tattoo-Gutschein! Mitmachen bis 24.12.2025" />
+  <meta property="og:image" content="/hero-placeholder.svg" />
+  <meta property="og:url" content="https://gewinnspiel.dana-ink.com" />
+  <meta property="og:type" content="website" />
+  
+  <title>Dana Ink Weihnachts-Gewinnspiel 2025</title>
+  
+  <!-- Google Fonts: Festive headline font + clean body font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">🎄 Weihnachts-Gewinnspiel 2025</h1>
+      <p class="hero-subtitle">1.350€ in Tattoo-Gutscheinen zu gewinnen</p>
+      <img src="/hero-placeholder.svg" alt="Dana Ink Weihnachts-Gewinnspiel" class="hero-image">
+    </div>
+  </section>
+
+  <!-- Countdown Timer -->
+  <section class="countdown-section">
+    <h2 class="countdown-label">Noch Zeit zum Mitmachen:</h2>
+    <div id="countdown" class="countdown">
+      <div class="countdown-item">
+        <span id="days" class="countdown-number">00</span>
+        <span class="countdown-label-small">Tage</span>
+      </div>
+      <div class="countdown-item">
+        <span id="hours" class="countdown-number">00</span>
+        <span class="countdown-label-small">Stunden</span>
+      </div>
+      <div class="countdown-item">
+        <span id="minutes" class="countdown-number">00</span>
+        <span class="countdown-label-small">Minuten</span>
+      </div>
+      <div class="countdown-item">
+        <span id="seconds" class="countdown-number">00</span>
+        <span class="countdown-label-small">Sekunden</span>
+      </div>
+    </div>
+    <div id="winner-announcement" class="winner-announcement" style="display: none;">
+      <h2 class="winner-title">🎉 Gewinner: [NAME HIER EINTRAGEN]</h2>
+      <p class="winner-text">Herzlichen Glückwunsch!</p>
+    </div>
+  </section>
+
+  <!-- CTAs Section -->
+  <section class="cta-section">
+    <div class="cta-container">
+      <!-- CTA 1: 350€ Instagram Giveaway -->
+      <div class="cta-card">
+        <h3 class="cta-title">350€ Gutschein</h3>
+        <p class="cta-description">Instagram-Gewinnspiel</p>
+        <button id="cta-350" class="cta-button cta-button-primary">350€ gewinnen</button>
+      </div>
+
+      <!-- CTA 2: 1000€ Booking Giveaway -->
+      <div class="cta-card">
+        <h3 class="cta-title">1.000€ Gutschein</h3>
+        <p class="cta-description">Termin buchen & gewinnen</p>
+        <a href="https://dana-ink.com/anfrage" target="_blank" class="cta-button cta-button-secondary">1.000€ gewinnen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Share Buttons -->
+  <section class="share-section">
+    <h3 class="share-title">Freunden davon erzählen!</h3>
+    <div class="share-buttons">
+      <button id="share-whatsapp" class="share-button share-whatsapp">
+        <span class="share-icon">📱</span>
+        WhatsApp
+      </button>
+      <button id="share-instagram" class="share-button share-instagram">
+        <span class="share-icon">📸</span>
+        Instagram Stories
+      </button>
+      <button id="share-copy" class="share-button share-copy">
+        <span class="share-icon">🔗</span>
+        Link kopieren
+      </button>
+    </div>
+    <p id="copy-success" class="copy-success" style="display: none;">✅ Link kopiert!</p>
+  </section>
+
+  <!-- Teilnahmebedingungen Button -->
+  <section class="terms-section">
+    <a href="/teilnahmebedingungen.html" class="terms-button">Teilnahmebedingungen</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://dana-ink.com/impressum" target="_blank">Impressum</a>
+      <span class="footer-divider">•</span>
+      <a href="https://dana-ink.com/datenschutz" target="_blank">Datenschutz</a>
+    </div>
+    <p class="footer-copyright">© 2024 Dana Ink</p>
+  </footer>
+
+  <!-- Modal for 350€ Instagram Instructions -->
+  <div id="modal-350" class="modal" style="display: none;">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close">×</button>
+      <h2 class="modal-title">350€ Instagram-Gewinnspiel</h2>
+      
+      <div class="modal-instructions">
+        <p class="modal-intro">🎄 So nimmst du teil:</p>
+        <ol class="modal-steps">
+          <li>Folge <strong>@dana.ink</strong> auf Instagram</li>
+          <li>Like den Gewinnspiel-Post</li>
+          <li>Kommentiere mit dem Losungswort: <strong>[LOSUNGSWORT]</strong></li>
+        </ol>
+      </div>
+
+      <a id="modal-instagram-link" href="#instagram-post-placeholder" target="_blank" class="modal-cta">Zum Instagram-Post</a>
+      
+      <a href="/teilnahmebedingungen.html" class="modal-terms-link">Hier geht's zu den Teilnahmebedingungen</a>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
+
