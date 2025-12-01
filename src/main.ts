@@ -61,16 +61,21 @@ setInterval(updateCountdown, 1000);
 
 const modal350 = document.getElementById('modal-350');
 const cta350Button = document.getElementById('cta-350');
+const cta350ButtonTop = document.getElementById('cta-350-top');
 const modalClose350 = document.getElementById('modal-close');
 const modalOverlay350 = modal350?.querySelector('.modal-overlay');
 
-// Open modal
-cta350Button?.addEventListener('click', () => {
+// Open modal function
+function openModal350() {
   if (modal350) {
     modal350.style.display = 'flex';
     document.body.style.overflow = 'hidden'; // Prevent background scroll
   }
-});
+}
+
+// Open modal from both buttons
+cta350Button?.addEventListener('click', openModal350);
+cta350ButtonTop?.addEventListener('click', openModal350);
 
 // Close modal function
 function closeModal350() {
@@ -92,16 +97,21 @@ modalOverlay350?.addEventListener('click', closeModal350);
 
 const modal1000 = document.getElementById('modal-1000');
 const cta1000Button = document.getElementById('cta-1000');
+const cta1000ButtonTop = document.getElementById('cta-1000-top');
 const modalClose1000 = document.getElementById('modal-close-1000');
 const modalOverlay1000 = modal1000?.querySelector('.modal-overlay');
 
-// Open modal
-cta1000Button?.addEventListener('click', () => {
+// Open modal function
+function openModal1000() {
   if (modal1000) {
     modal1000.style.display = 'flex';
     document.body.style.overflow = 'hidden'; // Prevent background scroll
   }
-});
+}
+
+// Open modal from both buttons
+cta1000Button?.addEventListener('click', openModal1000);
+cta1000ButtonTop?.addEventListener('click', openModal1000);
 
 // Close modal function
 function closeModal1000() {
