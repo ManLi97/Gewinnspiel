@@ -58,6 +58,11 @@ Before going live, replace these:
 - **Find:** `#instagram-post-placeholder`
 - **Replace with:** Actual Instagram post URL (e.g., `https://www.instagram.com/p/XXXXX/`)
 
+### Direct Modal Links for Instagram
+- **1000€ Modal:** Use `gewinnspielinsta.netlify.app/1000` in your Instagram bio or stories
+- This opens the page directly with the 1000€ modal displayed
+- Perfect for Instagram post links where you want users to see booking instructions immediately
+
 ### 3. Losungswort (Code Word)
 - **Current:** `350` (already set)
 - **Location:** `index.html` line 127 in 350€ modal
@@ -75,6 +80,7 @@ Before going live, replace these:
 - **Christmas Theme:** Subtle gradient glow + festive headline font (Crimson Text)
 - **Responsive:** Mobile-first design
 - **Accessibility:** Respects `prefers-reduced-motion`
+- **Direct Modal Link:** Access 1000€ modal directly via `/1000` URL (perfect for Instagram links)
 
 ## 🔧 Technical Details
 
@@ -117,6 +123,7 @@ You'll need to:
 - [ ] Test countdown timer (check timezone)
 - [ ] Test 350€ modal opens correctly
 - [ ] Test 1000€ modal opens correctly
+- [ ] Test direct link to 1000€ modal: `yourdomain.com/1000`
 - [ ] Test booking link in 1000€ modal goes to dana-ink.com/anfrage
 - [ ] Test Instagram link works
 - [ ] Test teilnahmebedingungen page loads and displays correctly

@@ -1,0 +1,3 @@
+# Redirect /1000 to index.html (modal opens via JavaScript)
+/1000   /index.html   200
+

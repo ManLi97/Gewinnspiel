@@ -93,7 +93,7 @@ modalOverlay350?.addEventListener('click', closeModal350);
 const modal1000 = document.getElementById('modal-1000');
 const cta1000Button = document.getElementById('cta-1000');
 const modalClose1000 = document.getElementById('modal-close-1000');
-const modalOverlay1000 = modal1000?.querySelector('.modal-overlay-1000');
+const modalOverlay1000 = modal1000?.querySelector('.modal-overlay');
 
 // Open modal
 cta1000Button?.addEventListener('click', () => {
@@ -197,6 +197,27 @@ copyBtn?.addEventListener('click', async () => {
     document.body.removeChild(textArea);
   }
 });
+
+// ===================================
+// URL-BASED MODAL OPENING
+// ===================================
+
+// Check if URL contains /1000 or #1000 to open the 1000€ modal directly
+function checkURLForModal() {
+  const path = window.location.pathname;
+  const hash = window.location.hash;
+  
+  if (path.includes('/1000') || hash === '#1000') {
+    // Open 1000€ modal automatically
+    if (modal1000) {
+      modal1000.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+  }
+}
+
+// Run on page load
+checkURLForModal();
 
 // ===================================
 // CONSOLE LOG FOR DEVELOPMENT
