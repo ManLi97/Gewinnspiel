@@ -317,7 +317,9 @@ a:hover {
 }
 
 .share-icon {
-  font-size: 1.2rem;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .copy-success {
@@ -331,29 +333,24 @@ a:hover {
    =================================== */
 .terms-section {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 2rem 1rem;
   max-width: 600px;
   margin: 0 auto;
 }
 
-.terms-button {
+.terms-link {
   display: inline-block;
-  padding: 1rem 2.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-body);
-  background: var(--bg-secondary);
-  border: 2px solid var(--divider);
-  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: underline;
   transition: all 0.3s ease;
-  text-decoration: none;
+  padding: 0.5rem 0;
 }
 
-.terms-button:hover {
-  border-color: var(--accent-purple);
+.terms-link:hover {
   color: var(--accent-purple-light);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+  text-decoration-thickness: 2px;
 }
 
 /* ===================================

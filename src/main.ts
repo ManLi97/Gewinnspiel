@@ -59,37 +59,69 @@ setInterval(updateCountdown, 1000);
 // MODAL HANDLING (350€ CTA)
 // ===================================
 
-const modal = document.getElementById('modal-350');
+const modal350 = document.getElementById('modal-350');
 const cta350Button = document.getElementById('cta-350');
-const modalClose = document.getElementById('modal-close');
-const modalOverlay = modal?.querySelector('.modal-overlay');
+const modalClose350 = document.getElementById('modal-close');
+const modalOverlay350 = modal350?.querySelector('.modal-overlay');
 
 // Open modal
 cta350Button?.addEventListener('click', () => {
-  if (modal) {
-    modal.style.display = 'flex';
+  if (modal350) {
+    modal350.style.display = 'flex';
     document.body.style.overflow = 'hidden'; // Prevent background scroll
   }
 });
 
 // Close modal function
-function closeModal() {
-  if (modal) {
-    modal.style.display = 'none';
+function closeModal350() {
+  if (modal350) {
+    modal350.style.display = 'none';
     document.body.style.overflow = ''; // Restore scroll
   }
 }
 
 // Close on X button
-modalClose?.addEventListener('click', closeModal);
+modalClose350?.addEventListener('click', closeModal350);
 
 // Close on overlay click
-modalOverlay?.addEventListener('click', closeModal);
+modalOverlay350?.addEventListener('click', closeModal350);
 
-// Close on ESC key
+// ===================================
+// MODAL HANDLING (1000€ CTA)
+// ===================================
+
+const modal1000 = document.getElementById('modal-1000');
+const cta1000Button = document.getElementById('cta-1000');
+const modalClose1000 = document.getElementById('modal-close-1000');
+const modalOverlay1000 = modal1000?.querySelector('.modal-overlay-1000');
+
+// Open modal
+cta1000Button?.addEventListener('click', () => {
+  if (modal1000) {
+    modal1000.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Prevent background scroll
+  }
+});
+
+// Close modal function
+function closeModal1000() {
+  if (modal1000) {
+    modal1000.style.display = 'none';
+    document.body.style.overflow = ''; // Restore scroll
+  }
+}
+
+// Close on X button
+modalClose1000?.addEventListener('click', closeModal1000);
+
+// Close on overlay click
+modalOverlay1000?.addEventListener('click', closeModal1000);
+
+// Close on ESC key (closes both modals)
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
-    closeModal();
+    closeModal350();
+    closeModal1000();
   }
 });
 

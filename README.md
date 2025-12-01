@@ -61,9 +61,8 @@ Before going live, replace these:
 - **Replace with:** Actual Instagram post URL (e.g., `https://www.instagram.com/p/XXXXX/`)
 
 ### 3. Losungswort (Code Word)
-- **File:** `index.html`
-- **Find:** `[LOSUNGSWORT]`
-- **Replace with:** Actual code word for participation
+- **Current:** `350` (already set)
+- **Location:** `index.html` line 127 in 350€ modal
 
 ### 4. Teilnahmebedingungen PDF
 - **File:** `public/teilnahmebedingungen.pdf`
@@ -124,11 +123,12 @@ You'll need to:
 - [ ] Replace all placeholders
 - [ ] Test countdown timer (check timezone)
 - [ ] Test 350€ modal opens correctly
-- [ ] Test 1000€ CTA links to dana-ink.com/anfrage
+- [ ] Test 1000€ modal opens correctly
+- [ ] Test booking link in 1000€ modal goes to dana-ink.com/anfrage
 - [ ] Test Instagram link works
 - [ ] Test teilnahmebedingungen page loads
 - [ ] Test PDF download works
-- [ ] Test share buttons (WhatsApp, Instagram, Copy)
+- [ ] Test share buttons with SVG icons (WhatsApp, Instagram, Copy)
 - [ ] Test mobile responsiveness
 - [ ] Test on different browsers (Chrome, Safari, Firefox)
 
