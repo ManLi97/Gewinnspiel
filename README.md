@@ -50,10 +50,8 @@ npm run preview
 Before going live, replace these:
 
 ### 1. Hero Image
-- **File:** `public/hero-placeholder.svg` (currently placeholder SVG)
-- **Replace with:** Photo of Dana holding both vouchers (use .jpg or .png)
-- **Recommended size:** 1200x800px (or similar 3:2 ratio)
-- **Update references:** Change image path in `index.html` if using different format
+- **Current:** `public/hero-image.jpeg` - ✅ Already added
+- **Note:** Image shows Dana at work in her studio
 
 ### 2. Instagram Post Link
 - **File:** `index.html`
@@ -64,15 +62,10 @@ Before going live, replace these:
 - **Current:** `350` (already set)
 - **Location:** `index.html` line 127 in 350€ modal
 
-### 4. Teilnahmebedingungen PDF
-- **File:** `public/teilnahmebedingungen.pdf`
-- **Replace with:** Legal T&Cs document (including Instagram disclaimer)
+### 4. Teilnahmebedingungen
+- **File:** `teilnahmebedingungen.html` - ✅ Final T&Cs implemented (HTML only, no PDF needed)
 
-### 5. Teilnahmebedingungen Text
-- **File:** `teilnahmebedingungen.html`
-- **Replace:** Placeholder text with final legal content
-
-### 6. Winner Name (After Raffle)
+### 5. Winner Name (After Raffle)
 - **Option A (Simple):** Edit `index.html` line with `[NAME HIER EINTRAGEN]`
 - **Option B (Recommended):** Edit `src/main.ts` line with `const WINNER_NAME = '[NAME]'`
 
@@ -86,7 +79,7 @@ Before going live, replace these:
 ## 🔧 Technical Details
 
 ### Countdown Timer
-- **Target:** December 24, 2025, 13:00 CET
+- **Target:** December 24, 2025, 12:00 CET
 - **Behavior:** Shows winner announcement when expired
 - **Edit target date:** `src/main.ts` line with `targetDate`
 
@@ -126,8 +119,7 @@ You'll need to:
 - [ ] Test 1000€ modal opens correctly
 - [ ] Test booking link in 1000€ modal goes to dana-ink.com/anfrage
 - [ ] Test Instagram link works
-- [ ] Test teilnahmebedingungen page loads
-- [ ] Test PDF download works
+- [ ] Test teilnahmebedingungen page loads and displays correctly
 - [ ] Test share buttons with SVG icons (WhatsApp, Instagram, Copy)
 - [ ] Test mobile responsiveness
 - [ ] Test on different browsers (Chrome, Safari, Firefox)

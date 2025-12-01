@@ -2,8 +2,8 @@
 // COUNTDOWN TIMER LOGIC
 // ===================================
 
-// Target: December 24, 2025, 13:00 CET
-const targetDate = new Date('2025-12-24T13:00:00+01:00').getTime();
+// Target: December 24, 2025, 12:00 CET
+const targetDate = new Date('2025-12-24T12:00:00+01:00').getTime();
 
 // TODO: Replace with actual winner name after raffle
 const WINNER_NAME = '[NAME HIER EINTRAGEN]';

@@ -590,7 +590,16 @@ a:hover {
 .terms-section-content h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
   color: var(--text-heading);
+}
+
+.terms-section-content h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent-purple-light);
+  font-weight: 600;
 }
 
 .terms-section-content p,
