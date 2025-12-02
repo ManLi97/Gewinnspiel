@@ -153,9 +153,9 @@ whatsappBtn?.addEventListener('click', () => {
 const instagramBtn = document.getElementById('share-instagram');
 instagramBtn?.addEventListener('click', () => {
   // Instagram Stories doesn't have direct web share API
-  // Best approach: Open Instagram and let user share manually
-  // On mobile, this will open the Instagram app
-  const instagramUrl = 'https://www.instagram.com/dana.ink/';
+  // Best approach: Open the specific giveaway post
+  // On mobile, this will open the Instagram app directly to the post
+  const instagramUrl = 'https://www.instagram.com/p/DRwSpeaDBbm/';
   window.open(instagramUrl, '_blank');
   
   // Also try native share API if available

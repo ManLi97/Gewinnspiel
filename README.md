@@ -54,9 +54,8 @@ Before going live, replace these:
 - **Note:** Image shows Dana at work in her studio
 
 ### 2. Instagram Post Link
-- **File:** `index.html`
-- **Find:** `#instagram-post-placeholder`
-- **Replace with:** Actual Instagram post URL (e.g., `https://www.instagram.com/p/XXXXX/`)
+- **Current:** `https://www.instagram.com/p/DRwSpeaDBbm/` - ✅ Already set
+- **Location:** Modal button and Instagram share button both link to the post
 
 ### Direct Modal Links for Instagram
 - **1000€ Modal:** Use `gewinnspielinsta.netlify.app/1000` in your Instagram bio or stories
